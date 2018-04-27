@@ -1,0 +1,42 @@
+body{
+    margin: 1%;
+    padding: 1%;
+}
+
+h1{
+    color: blue;
+}
+
+p{
+    font-size: 130%;
+}
+
+li{
+    margin-top: 1%;
+}
+
+img{
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid black;
+    display: block;
+}
+
+#div-left{
+    width: 40%;
+    float: left;
+}
+
+#div-right{
+    width: 30%;
+    float: right;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+}
+
+figcaption{
+    margin-left: 2%;
+}
