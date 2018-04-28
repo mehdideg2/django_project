@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Django Project</title>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    </head>
+
+    <body>
+        <h1>Django Web App Project :)</h1>
+
+        <p>This web page will hold the biggest django web app 
+            ever created, so be ready to be amazed !
+        </p>
+        <br><br><br><br>
+
+        <div id="div-left">
+            <h3>This web app will be made with :</h3>
+            <ul>
+                <li>Python 3,</li>
+                <li>Django 2.0.4,</li>
+                <li>HTML/CSS/Javascript obviously x),</li>
+                <li>And of course a lot of imagination.</li>
+            </ul>
+        </div>
+
+        <div id="div-right">
+            <figure>
+                <img src="{% static "python-icon.png" %}" alt="python logo" width="100px"/>
+                <figcaption>Python Logo</figcaption>
+            </figure>
+            <figure>
+                <img src="{% static "django-logo.png" %}" alt="python logo" width="100px"/>
+                <figcaption>Django Logo</figcaption>
+            </figure>
+            
+        </div>
+    </body>
+</html>
