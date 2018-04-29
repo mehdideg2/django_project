@@ -11,6 +11,14 @@
     </head>
 
     <body>
+        <nav id="menu">
+            <ul>
+                <li><a href="http://127.0.0.1:8000/myapp/index/">Home</a></li>
+                <li><a href="http://127.0.0.1:8000/myapp/hello/">Hello</a></li>
+                <li><a href="http://127.0.0.1:8000/myapp/morning/">Morning</a></li>
+            </ul>
+        </nav>
+
         <h1>Django Web App Project :)</h1>
 
         <p>This web page will hold the biggest django web app 
@@ -31,13 +39,39 @@
         <div id="div-right">
             <figure>
                 <img src="{% static "python-icon.png" %}" alt="python logo" width="100px"/>
-                <figcaption>Python Logo</figcaption>
+                <figcaption class="logo">Python Logo</figcaption>
             </figure>
             <figure>
                 <img src="{% static "django-logo.png" %}" alt="python logo" width="100px"/>
-                <figcaption>Django Logo</figcaption>
+                <figcaption class="logo">Django Logo</figcaption>
             </figure>
-            
         </div>
+        <br><br><br><br>
+
+        <h3>Here's an exemple of how to get data from an sqlite 3 database and show it in a table, just see the source 
+            code and you will get it:
+        </h3>
+        <table>
+            <tr>
+                {% for header in table_header %}
+                    <th>{{ header }}</th>
+                {% endfor %}
+            </tr>
+            
+            {% for person in participant %}
+                <tr>
+                    {% for info in person %}
+                        <td>{{ info }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+        <br><br><br><br>
+
+        <figure class="random_girl">
+            <img src="{% static "random-pic.jpg" %}" alt="random girl" class="random_girl" />
+            <figcaption class="random_girl">Just a Random Girl Pic</figcaption>
+        </figure>
+        
     </body>
 </html>

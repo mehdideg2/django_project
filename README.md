@@ -1,6 +1,6 @@
 # django_project
 
-Pour faire fonctionner l'application il faut d'abord lancer le server locale comme suit :
+Pour faire fonctionner l'application il faut d'abord lancer le server locale depuis votre terminal comme suit :
 
       python manage.py runserver 
 
