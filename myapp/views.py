@@ -1,6 +1,7 @@
 # Create your views here.
+import sqlite3 as sq
 from django.http import HttpResponse
-from django.template import loader
+from django.shortcuts import render
 
 
 def hello(request, number=0):
@@ -20,5 +21,14 @@ def viewArticleByDate(request, month, year):
    return HttpResponse(text)
 
 def index(request):
-    template = loader.get_template('index.htm')
-    return HttpResponse(template.render())
+    return render(request, 'index.htm', {'table_header': table_header, 'participant': participant})
+
+
+con = sq.connect("myapp/data.db")
+cur = con.cursor()
+cur.execute("SELECT * FROM Django_Project_Participant")
+
+table_header = [tuple[0] for tuple in cur.description]
+participant = cur.fetchall()
+
+con.close()

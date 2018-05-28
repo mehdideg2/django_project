@@ -1,6 +1,29 @@
 body{
     margin: 1%;
     padding: 1%;
+    background-color: white;
+}
+
+#menu{
+    background-color: rgba(0, 162, 255, 0.322);
+    padding: 1%;
+}
+
+#menu li{
+    font-size: 150%;
+    padding-right: 5%;
+    margin-right: 5%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover{
+    text-decoration: underline;
 }
 
 h1{
@@ -23,13 +46,13 @@ img{
 }
 
 #div-left{
-    width: 40%;
-    float: left;
+    width: 50%;
+    display: inline-block;
 }
 
 #div-right{
     width: 30%;
-    float: right;
+    display: inline-block;
 }
 
 figure{
@@ -37,6 +60,32 @@ figure{
     align-items: center;
 }
 
-figcaption{
+.logo{
     margin-left: 2%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    text-align: center;
+    background-color: aqua;
+}
+
+th, td{
+    border: 2px solid red;
+    text-align: left;
+    padding: 25px;
+}
+
+td:last-child{
+    text-align: center;
+}
+
+.random_girl{
+    display: block;
+    text-align: center;
+    border: none;
+    width: 80%;
 }
