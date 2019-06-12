@@ -25,7 +25,7 @@ SECRET_KEY = '$(c@mbf9@%+0+pqpix!akv-mus_8&bxz345+$369w_m1x1++bb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mehdisite.site']
 
 
 # Application definition
