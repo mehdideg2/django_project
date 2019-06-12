@@ -68,6 +68,11 @@ table{
     border-collapse: collapse;
 }
 
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
 th{
     text-align: center;
     background-color: aqua;
