@@ -5,11 +5,11 @@ from . import views
 
 
 urlpatterns = [
+    path('', views.index, name='index'),
     path('hello/', views.hello, name='hello'),
     path('morning/', views.morning, name='morning'),
     path('article/<int:articleId>', views.viewArticleById, name='article'),
     path('article/<int:month>/<int:year>', views.viewArticleByDate, name = 'articles'),
-    path('index/', views.index, name='index')
 ]
 
 """ 
